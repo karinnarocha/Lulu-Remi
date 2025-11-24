@@ -1,0 +1,45 @@
+.AboutContainer{
+    padding: 10% 25% 10% 25%;
+    background-image: url("/images/Paper_texture.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.AboutTitle{
+    font-size: 120px;
+    font-family: 'Annie use your telescope', sans-serif;
+    right: 30%;
+    position: relative;
+}
+.AboutText{
+    padding: 10% 0 10% 0;
+    font-size: 25px;
+    font-family: 'Annie use your telescope', sans-serif;
+}
+.LogoAboutPage{
+    position: relative;
+    width: 25%;
+    height: 10%;
+    left: 30%;
+}
+.ContactUsButtonContainer{
+    padding: 5% 0 0 0;
+}
+
+
+@media screen and (max-width: 600px) {
+    .AboutContainer{
+        padding:  20% 5% 20% 5%;
+        background-image: url("/images/Paper_texture.png");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .AboutTitle{
+    font-size: 80px;
+    right: 12%;
+}
+
+}

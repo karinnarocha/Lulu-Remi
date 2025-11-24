@@ -1,0 +1,222 @@
+.HomeContainer{
+    background-image: url("/images/Paper_texture.png");
+    margin: 9vh 0 0;
+}
+
+.HeroSection{ 
+    background-image: url('/images/luluremi.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.HeroLogo{
+    position: relative;
+    width: 40%;
+    height: auto;
+    left: 10%;
+    padding-top: 150px;
+}
+
+.HeroCTA{
+    font-family: 'Annie use your telescope', sans-serif;
+    position: relative;
+    left: 10%;
+    padding-top: 40px;
+    max-width: 70%;
+    font-size: 35px;
+    width: 50%;
+}
+
+.HeroButtonContainer{
+    position: relative;
+    padding : 2% 0 0 20%;
+    width: 100%;
+}
+.HeroDescriptionSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CarouselBackground{
+    background-image: url('/images/rainbow.webp');
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 110vh;
+
+}
+.HeroDescriptiontext{
+    font-family: 'Annie use your telescope', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+
+
+}
+
+.HeroDescriptionSectionthree{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0 0 5%;
+    height: 80vh;
+}
+    
+.SectionThreeTextContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 7% 0 10%;
+}
+.HeroDescriptionSectionThreeText{
+    text-align: left;
+    padding-bottom: 8%;
+    font-family: 'Annie use your telescope', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+}
+.SukkotCoverImage{
+    width: 50%;
+    height: auto;
+    padding: 0 5% 0 0;
+}
+
+.HeroDescriptionSectionfour{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+}
+.SukkotCoverImageSectionFour{
+    display: flex;
+    flex-direction: column;
+
+}
+.SukkotCoverImageFaceUp{
+    position: relative;
+    left: 35%;
+    width: auto;
+}
+
+
+.howToImagesSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    left: 6%;
+}
+.Color_it{
+    position: relative;
+    left: -60px;
+}
+
+.Peel_it{
+    position: relative;
+    left: 60px;
+}
+.Play_it{
+    position: relative;
+    left: -60px;
+}
+.BrandpillarSection{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.HeroDescriptionSectionfive{
+    width: 100vw;
+}
+.HeroDescriptionSectionFiveText{
+    text-align: center;
+    font-family: 'Annie use your telescope', sans-serif;
+    padding: 5% 0 0 0;
+}
+.CTASectionFive{
+    font-size: 32px;
+    font-weight: 800;
+}
+.ProductGrid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    gap: 10%;
+    
+}
+.ProductGridContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  /* ✅ centers the row of cards */
+    align-items: center;
+    height: 100%;
+    padding: 0 0 10% 0;
+}
+
+.HeroDescriptionSectionsix{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    }
+
+.TestimonialContainer{
+    margin: 10% 0 0 10%;
+}
+.hiddenSEO{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .SectionThreeTextContainer{
+        padding: 0 2% 0 2%;
+    }
+    .HeroDescriptionSectionthree{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 80vh;        
+    }
+    .HeroDescriptionSectionfour{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .SukkotCoverImageFaceUp{
+        width: 90%;
+        left: 20px;
+        padding: 20% 0 0 0;
+    }
+    .HeroCTA{
+        font-size: 30px;
+    }
+    .HeroSubtitle{
+        font-size: 25px;
+    }
+
+    .HeroDescriptionSectionThreeText{
+        text-align: center;
+        padding: 0 0 0 0;
+    }
+    .SukkotCoverImage{
+        width: 80%;
+        padding: 10% 0 10% 0;
+    }
+    .CarouselBackground{
+        height: 160vh;
+    }
+    .howToImagesSection{
+        padding: 20% 0 0 0;
+    }
+}

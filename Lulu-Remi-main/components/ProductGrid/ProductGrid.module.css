@@ -1,0 +1,60 @@
+/* === Desktop layout === */
+.gridContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;     /* centers the group */
+  align-items: flex-end;       /* aligns bottom edges evenly */
+  gap: 80px;                   /* spacing between cards */
+  padding: 2rem;
+  flex-wrap: nowrap;           /* keep all 3 side by side */
+}
+
+/* If the yellow middle box is hidden, center the two remaining cards */
+.gridContainer:has(.productCard:nth-child(2)[style*="display: none"]) {
+  justify-content: center;
+  gap: 120px; /* slightly wider to balance two cards */
+}
+
+/* === Card base style === */
+.productCard {
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.productCard:hover {
+  transform: scale(1.05);
+}
+
+/* === Image & text === */
+.productImage {
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+.productTitle {
+  font-family: "Annie use your telescope", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.productPrice {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* === Mobile layout === */
+@media (max-width: 900px) {
+  .gridContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+}

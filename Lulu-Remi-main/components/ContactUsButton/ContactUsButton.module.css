@@ -1,0 +1,18 @@
+.ContactUsButton{
+    width: 200px;
+    height: 60px;
+    background-color: #FB37B9; 
+    color: #ffffff;
+    border: 1px solid #FB37B9;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 35px;
+    font-family: "Annie Use Your Telescope", cursive;
+    font-weight: 800;
+    background: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(0,0,0,0) 20px),
+    #FB37B9;
+}
+
+.ContactUsButton:hover{
+    background-color: #f96ac9; 
+}

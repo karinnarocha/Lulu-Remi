@@ -1,0 +1,52 @@
+.Pilars_Container {
+    width: 100vw;
+    overflow: hidden;
+    padding: 5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Inner_Pilar {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scrollLeft 30s linear infinite;
+    width: max-content;
+  }
+  
+  .Pillar_Item {
+    flex: 0 0 300px;
+    height: 45vh;
+    margin: 0 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+  }
+  
+  .Pillar_Icon_Title {
+    font-family: "Annie use your telescope", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .Pillar_Icon_Text {
+    font-family: "Annie use your telescope", sans-serif;
+    font-size: 20px;
+    width: 80%;
+  }
+  
+  @keyframes scrollLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  

@@ -1,0 +1,18 @@
+.BuyNowButton{
+    width: 200px;
+    height: 60px;
+    background-color: #29B1ED; 
+    color: #ffffff;
+    border: 1px solid #1682B2;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 35px;
+    font-family: "Annie Use Your Telescope", cursive;
+    font-weight: 800;
+    background: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(0,0,0,0) 20px),
+    #29B1ED;
+}
+
+.BuyNowButton:hover{
+    background-color: #4dbeee; 
+}
