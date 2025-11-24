@@ -38,9 +38,9 @@ export default function AppNavbar({ onCartClick }) {
           menuOpen ? styles.ShowMenu : ""
         }`}
       >
-        <div href="/" className={styles.LeftLinks}>
+        <Link href="/#products" className={styles.LeftLinks}>
           SHOP !
-        </div>
+        </Link>
         <Link href="/contact?form=contact" className={styles.LeftLinks}>
           Contact
         </Link>

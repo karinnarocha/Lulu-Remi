@@ -3,14 +3,15 @@
     flex-direction: row;
     justify-content:space-between;
     background-image: url("/images/testimonialbackground.png");
-    background-size: cover;
+    background-size:cover;
+    margin: 5% 0 0 0 ;
 }
 
 .TestimonialContainer{
     display: flex;
     flex-direction: column;
     width: 60%;
-    padding-left: 15%;
+    padding-left: 20%;
     height: 400px;
     gap: 20px;
 }
@@ -33,7 +34,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto;
+        background-position: bottom;
+        margin: 20% 0 0 0;
     }
     .TestimonialText{
         text-align: center;

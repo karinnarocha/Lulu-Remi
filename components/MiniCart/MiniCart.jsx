@@ -1,17 +1,17 @@
 "use client";
 import styles from "./MiniCart.module.css";
 import { useRouter } from "next/navigation";
-import { getCart } from "../../lib/shopify"; // ✅ make sure this path matches your project
+import { getCart } from "../../lib/shopify"; 
 
 export default function MiniCart({ items = [], onClose }) {
   const router = useRouter();
 
   const groupedItems = items.reduce((acc, item) => {
-    const existing = acc.find((i) => i.title === item.title);
+    const existing = acc.find((i) => i.id === item.id);
     if (existing) {
-      existing.quantity += 1;
+      existing.quantity += item.quantity; 
     } else {
-      acc.push({ ...item, quantity: 1 });
+      acc.push({ ...item });
     }
     return acc;
   }, []);

@@ -1,5 +1,10 @@
+import { Suspense } from "react";
 import ContactClient from "./ContactClient";
 
 export default function ContactPage() {
-  return <ContactClient />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ContactClient />
+    </Suspense>
+  );
 }
