@@ -73,8 +73,8 @@ export default function HomePage() {
           <Image
             src="/images/bookup.webp"
             alt="Lulu & Remi Sukkot interactive sticker-coloring book for kids"
-            width={700}
-            height={800}
+            width={900}
+            height={900}
             data-aos="fade-right"
             className={styles.SukkotCoverImage}
           />
@@ -170,10 +170,10 @@ export default function HomePage() {
             </div>
              <div className={styles.SukkotCoverImageSectionFour}>
             <Image
-              src="/images/polaroids.png"
+              src="/images/polaroids.webp"
               alt="Lulu & Remi Sukkot book cover"
-              width={2000}
-              height={400}
+              width={10000}
+              height={500}
               className={styles.SukkotCoverImageFaceUp}
               data-aos="zoom-in"
             />

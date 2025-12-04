@@ -82,10 +82,11 @@
     font-size: 22px;
 }
 .SukkotCoverImage{
-    width: 50%;
-    left: 50px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
     height: auto;
-    position: relative;
+    
 }
 
 .HeroDescriptionSectionfour{
@@ -104,6 +105,7 @@
     left: 0;
 }
 .SukkotCoverImageFaceUp{
+    width: 100vh;
     height: auto;
     padding: 0 0 5% 0;
 }
@@ -191,7 +193,7 @@
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .HeroLogo{
         width: 60%;
         padding-top: 90px;
