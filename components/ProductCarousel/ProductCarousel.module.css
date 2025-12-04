@@ -1,0 +1,79 @@
+
+.carouselContainer {
+  display: flex;
+  gap: 80px;
+  overflow-x: auto;
+  padding: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  scroll-snap-type: x mandatory;
+}
+
+.carouselContainer::-webkit-scrollbar {
+  display: none; /* clean scrolling */
+}
+
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 0 0 auto;
+  padding: 1rem;
+  text-align: center;
+  scroll-snap-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  color: #111;
+  border-radius: 30px;
+  transition: transform 0.25s ease;
+}
+
+/* Hover interaction */
+.productCard:hover {
+  transform: scale(1.03);
+}
+
+
+.productImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: opacity 0.35s ease-in-out;
+  cursor: pointer;
+}
+
+.productTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+
+.productPrice {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+
+@media screen and (max-width: 600px) {
+  .carouselContainer {
+    flex-direction: column;
+    overflow-x: visible;
+    gap: 40px;
+  }
+
+  .productCard {
+    width: 280px !important;
+    height: auto;
+  }
+
+  .productImage {
+    height: 250px;
+  }
+}

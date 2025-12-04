@@ -1,0 +1,210 @@
+/* ========== Page Container ========== */
+.productPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5% 15% 5% 15%;
+  background-image: url("/images/Paper_texture.png");
+}
+
+/* Logo */
+.LogoAboutPage {
+  height: auto;
+  padding-top: 10%;
+  padding: 5%;
+  margin: auto;
+}
+
+/* ========== Product Info Section ========== */
+.ProductInfoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; 
+  padding: 5% 5% 10% 5%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background-color: #f9fad3 ;
+  border-radius: 25px;
+  width: 100%;
+}
+.productInfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.DetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+}
+
+.ProductTitle {
+  font-family: "Annie use your telescope", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.ProductSubtitle {
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 80%; 
+}
+.ProductPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+.MainImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #ffffffb2;
+  width: 350%;
+}
+.MainImage{
+  width: 90%;
+  height: 90%;
+}
+
+
+.ThumbnailContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+
+}
+
+.ThumbnailImage {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.ThumbnailImage:hover {
+  transform: scale(1.05);
+  border: 2px solid #000;
+}
+
+
+/* Reviews (future use) */
+.ProductReviews {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.Star {
+  color: #f4b400; /* yellow star */
+}
+
+/* Add to Cart Button */
+.AddToCartButton {
+  background-color: #00aaff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.AddToCartButton:hover {
+  background-color: #008fcc;
+}
+
+/* ========== Tabs Section ========== */
+.TabsContainer{
+  padding: 10% 0 5% 0;
+}
+
+.ProductDisplayTabs {
+  display: flex;
+  gap: 80px;
+  font-family: "Annie use your telescope", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 0 0 5% 0;
+}
+
+.Tab {
+  position: relative;
+  padding-bottom: 5px; /* space for underline */
+}
+
+.TabActive {
+  border-bottom: 3px solid #000; /* underline */
+}
+
+/* ========== Tab Content ========== */
+.ProductDisplayContent {
+  font-size: 22px;
+  font-family: "Annie use your telescope", sans-serif;
+  height: 250px;
+}
+
+
+@media (max-width: 900px) {
+.ProductInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 2% 10% 5%;
+}
+
+.DetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #ffffffb2;
+  width: auto;
+}
+
+}
+
+@media (max-width: 768px) {
+  .LogoAboutPage {
+    width: 100%;
+  }
+  .ThumbnailContainer {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .ThumbnailImage {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  .ProductDisplayTabs {
+    gap: 20px;
+  }
+  .ProductDisplayContent {
+    height: 100%;
+  }
+}
+

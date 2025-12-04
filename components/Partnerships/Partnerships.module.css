@@ -1,0 +1,35 @@
+.Partnershipsection{
+    width: 80vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(212, 238, 240);
+    margin: 0 0 5% 0;
+    font-size: 28px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.PartnershipImagessection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+.PartnershipLogo{
+    padding: 2% 8% 2% 8%;
+}
+
+@media (max-width: 480px) {
+    .PartnershipImagessection{
+        flex-direction: column;
+    }
+    .PartnershipLogo{
+        width: 140px;
+        height: 60px;
+    }
+}

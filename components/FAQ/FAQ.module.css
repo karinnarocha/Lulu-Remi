@@ -1,0 +1,42 @@
+.FAQcontainer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 5% 0 5% 0 ;
+  gap: 20px;
+}
+.FAQTitle{
+  font-size: 25px;  
+  font-weight: 800;
+  padding-bottom: 2%;
+  font-family: 'Annie use your telescope', sans-serif;
+}
+.FAQ{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.FAQuestion{
+  font-size: 25px;
+  transition: color 0.5 ease;
+  cursor: pointer;
+  font-family: 'Annie use your telescope', sans-serif;
+}
+
+.FAQuestion:hover{
+  color:#333;
+}
+.FAAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  
+}
+.FAAnswer.open {
+  max-height: 500px;
+  color: #333;
+  opacity: 1;
+  font-family: "Arial";
+  font-size: 18px;
+}

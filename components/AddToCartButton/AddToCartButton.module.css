@@ -1,0 +1,21 @@
+.addToCartButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    background-color: #ffffff; 
+    color: #000000;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: "Annie Use Your Telescope", cursive;
+    font-weight: 800;
+    box-shadow: #5e5d5d 0px 0px 10px;
+}
+
+.addToCartButton:hover{
+    background-color: #4a4a49;
+    transform: scale(1.05);
+    color: #ffffff;
+}

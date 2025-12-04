@@ -1,0 +1,97 @@
+.benefitsSection {
+  width: 100%;
+  text-align: center;
+}
+.sectionLabel {
+  color: #2ba98c;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+.HeroDescriptiontext{
+    font-family: 'Annie use your telescope', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1d1d1d;
+  text-decoration: underline;
+}
+
+.sectionDescription {
+  max-width: 750px;
+  margin: 0 auto 3rem auto;
+  color: #5f6c74;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.benefitsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 7% 0 0 0 ;
+}
+
+.benefitCard {
+  max-width: 260px;
+  text-align: center;
+}
+
+.iconCircle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem auto;
+  border: 5px solid #b6f8d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefitImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.benefitCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+  color: #1d1d1d;
+}
+
+.divider {
+  width: 40px;
+  height: 2px;
+  background-color: #d78eee;
+  margin: 0.5rem auto 1rem auto;
+}
+
+.benefitCard p {
+  color: #5f6c74;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .sectionTitle {
+    font-size: 1.7rem;
+  }
+
+  .benefitsGrid {
+    gap: 2rem;
+  }
+
+  .iconCircle {
+    width: 120px;
+    height: 120px;
+  }
+}

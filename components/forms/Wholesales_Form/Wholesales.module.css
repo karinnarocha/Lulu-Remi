@@ -1,0 +1,76 @@
+.ContactPageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/Paper_texture.png');
+    padding: 10% 0 10% 0;
+
+}
+.ContatoTextContainer{
+    padding: 0 15% 0 15%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.LogoContactPage{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.ContactPageCTA{
+    font-size: 45px;
+    font-family: 'Annie use your telescope', sans-serif;
+}
+.ContanctPageText{
+    font-size: 30px;
+    font-family: 'Annie use your telescope', sans-serif;
+}
+form.ContactForm{
+    padding: 10% 10% 0 10%; 
+    display: flex;
+    flex-direction: column; 
+    gap:20px; 
+    font-family: 'Annie use your telescope', sans-serif;  
+    font-size: 30px;
+}
+
+input.InputContainer,
+textarea.InputContainer,
+select.InputContainer{
+    width: 25vw;
+    background-color: #BEFAB0;
+    background: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(0,0,0,0) 20px),
+    #BEFAB0;
+    border-radius: 30px;
+}
+.ButtonContainer{
+    padding: 20px 0 40px 0;
+    display: flex;
+    justify-content: center;
+}
+button.SendButton {
+    width: 200px;
+    height: 60px;
+    background-color: #FB37B9; 
+    color: #ffffff;
+    border: 1px solid #FB37B9;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 35px;
+    font-family: "Annie Use Your Telescope", cursive;
+    font-weight: 800;
+    background: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(0,0,0,0) 20px),
+    #FB37B9;
+}
+
+@media screen and (max-width: 600px) {
+    .ContactPageContainer{
+    flex-direction: column;
+    }
+
+    input.InputContainer,
+    textarea.InputContainer{
+    width:100%;
+    }
+}

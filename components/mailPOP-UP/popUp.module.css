@@ -1,0 +1,76 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+  }
+  
+  /* Popup box */
+  .popup {
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 380px;
+    border-radius: 20px;
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+    overflow-y: auto; 
+  }
+  
+  /* CLOSE BUTTON — dynamic, perfect positioning */
+  .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #652bc3;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 5px 5px;
+    z-index: 100000;
+  }
+  
+  /* Input */
+  .input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  
+  /* Subscribe button */
+  .submitBtn {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background: #B99FEE;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .terms {
+    font-size: 12px;
+    margin-top: 12px;
+    color: #555;
+  }
+
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px) scale(0.95);}
+    to   { opacity: 1; transform: translateY(0) scale(1);}
+  }
+  

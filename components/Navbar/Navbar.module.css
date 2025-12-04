@@ -1,0 +1,101 @@
+.NavbarContainer {
+  padding-left: 5% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* push logo left, links center, cart right */
+  align-items: center;
+  background: #B99FEE;
+  height: 9vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  box-shadow: inset 0 -4px 6px rgba(0, 0, 0, 0.15);
+  
+}
+
+/* Links container */
+.NavLinksContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 35%;
+  transition: all 0.3s ease;
+}
+
+/* Individual links */
+.LeftLinks {
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-size: 30px; 
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.LeftLinks:hover {
+  color: #3b2063; 
+}
+
+/* Cart icon */
+.NavIcons {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.NavIcon {
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.NavIcon:hover {
+  color: #3b2063;
+}
+
+.Hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+/* ========== Responsive ========== */
+@media (max-width: 480px) {
+  .Hamburger {
+    display: block;
+  }
+
+  .NavLinksContainer {
+    display: none;
+    position: absolute;
+    top: 9vh; /* right below the navbar */
+    right: 5%;
+    flex-direction: column;
+    background: #B99FEE;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .NavLinksContainer.ShowMenu {
+    display: flex;
+  }
+
+  .LeftLinks {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,79 @@
+.FooterContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #B99FEE;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0,0,0,.15), rgba(0,0,0,0) 20px),
+    #B99FEE;
+}
+
+.SubscribeSection{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+    width: 60%;
+    padding: 7%;
+    font-size: 22px;
+    font-family: 'Annie use your telescope', sans-serif;
+}
+.TermsText{
+    font-size: 22px;
+    text-align: left;
+}
+.NewsletterInput{
+    background-color: #8168B4;
+    border: 1px solid #6C6A6A;
+    border-radius: 20px;
+    height: 30px;
+}
+.animate__animated {
+  --animate-duration: 1s;
+}
+.footerSupportLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;   
+    justify-content: center; 
+    padding: 0 5% 0 0;
+    text-align: center;
+}
+.supportLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Annie use your telescope', sans-serif;
+}
+.SocialContent {
+  display: flex;
+  gap: 15px;
+  justify-content: center; 
+  margin-top: 1rem;
+}
+
+.SocialContent i {
+  font-size: 28px;
+  color: #000; 
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.SocialContent i:hover {
+  color: #b99fee; 
+}
+.SubscribeButton{
+    
+    width: 180px;
+    height: 40px;
+    background-color: #29B1ED; /* Tomato color */
+    color: #ffffff;
+    border: 1px solid #1682B2;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: "Annie Use Your Telescope", cursive;
+    font-weight: 800;
+}
+

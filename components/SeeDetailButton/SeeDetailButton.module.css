@@ -1,0 +1,16 @@
+.seeDetailButton{
+    width: 150px;
+    height: 60px;
+    background-color: #fd9d20; /* Tomato color */
+    color: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: "Annie Use Your Telescope";
+    font-weight: 800;
+    border-color:  #fd9d20;
+    
+}
+.seeDetailButton:hover{
+    background-color: #f7aa45;
+}
